@@ -1,0 +1,14 @@
+{% extends "qwertr/base.html" %}
+
+{% block content %}
+<div class="row">
+ <div class="col-md-6">
+  {{ form }}
+ </div>
+ <div class="col-md-6">
+   <a href="{% url "social:begin" "reddit" %}">
+   <i class="fa fa-4x fa-reddit-alien" aria-hidden="true"></i>
+  </a>
+ </div>
+</div>
+{% endblock %}
